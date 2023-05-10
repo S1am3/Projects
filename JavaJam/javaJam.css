@@ -1,0 +1,310 @@
+* { box-sizing: border-box;}
+
+body { 
+    background-color: #d2b48c;
+    color: #221811; 
+    font-family: Tahoma, Verdana, sans-serif;
+    margin: 0; }
+
+header{
+    color: #231814;
+    background-color: #D2b48c;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    background-image: url(assets/img/cup.jpg);
+    background-repeat: no-repeat;
+    /* padding-left: 105px; */
+    height: 128px;
+}
+
+header a:link {
+    text-decoration: none;
+    display: block;
+    color: #231814;
+}
+header a:visited {
+    text-decoration: none;
+    color: #231814;
+    display: block;
+}
+
+header a:hover {
+    text-decoration: none;
+    color: #fef6c2;
+    display: block;
+}
+
+main {
+    padding-left: 0em;
+    padding-right: 0em;
+    padding-bottom: 2em;
+    padding-top: 0;
+    display: block;
+    background-color: #fef6c2;
+}
+
+main ul {
+    padding-left: 2em;
+}
+
+h1 { /*background-color: #ccaa66;*/
+  color: #8c3826; 
+  text-align: center; 
+  font-size: 2em;}
+  
+h2 {
+    color: #8c3826;}
+
+h3{
+    color: #8c3826;
+}    
+
+h4 {
+    background-color: #d2b48c;
+    font-size: 1.2em;
+    padding-left: .5em;
+    padding-bottom: 0;
+    border-bottom: 2px solid #231814;
+    text-transform: capitalize;
+}
+
+main h2,h3,h4,p,div,ul,dl {
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+dt {
+    color: #8c3826;
+    text-align: center;
+}
+
+footer { background-color: #D2b48c;
+     color: #000000;
+     font-size: .60em;
+     font-style: italic; 
+     text-align: center; 
+    padding: 1em;
+    border-top: 2px solid#8c3826;}
+
+nav a { text-decoration: none;}
+
+nav { text-align: center;  
+    font-size: 1.5em;
+    padding-top: 5px; 
+    padding-bottom: 5px;
+    /* padding-left: 50px; */
+}
+nav a:link{color:#fef6c2;}
+nav a:visited{color:#d2b48c;}
+nav a:hover{color:#cc9933;}
+
+nav ul {
+    padding: 0;
+    list-style-type: none;
+    text-align: center;
+    flex-direction: column;
+    margin: 0;
+    font-size: 1.25em;
+    display: flex;
+}
+
+nav li {
+    padding-top: .5em;
+    padding-bottom: .5em;
+    padding-left: 1em;
+    padding-right: 1em;
+    width: 100%;
+    border-bottom: 1px solid #d2b48c;
+}
+
+img {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#wrapper {background-color: #231814; 
+        padding: 0%;}
+
+#mobile {
+    display: inline;
+}
+
+#desktop {
+    display: none;
+}
+
+.details {
+    padding-left: 20%;
+    padding-right: 20%;
+    overflow: auto;
+}        
+
+/* .floatleft {
+    float: left;
+    padding-bottom: 2em;
+} */
+
+/* .onethird{
+    float: left;
+    width: 33%;
+} */
+
+#homehero {
+    background-image: url(assets/img/road.jpg);
+    height: 250px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+#heromugs {
+    background-image: url(assets/img/threemugs.jpg);
+    height: 300px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+#heroguitar {
+    background-image: url(assets/img/guitar.jpg);
+    height: 300px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+#herojobs {
+    height: 300px;
+    background-image: url(assets/img/coffeecup.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%,100%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    padding-left: 1em;
+    width: 80%;
+}
+input, textarea {margin-bottom: .5em;}
+
+table {
+    text-align: center;
+    width: 90%;
+    border-spacing: 0;
+}
+
+td, th {
+    padding: 10px;
+}
+
+/* #odd {
+    background-color: #d2b48e;
+} */
+
+tr:nth-child(odd) {
+    background-color: #d2b48e;
+}
+
+@media(min-width: 1024px){
+    header{
+        grid-area: header;
+        background-image: url(assets/img/coffeelogo.jpg);
+    }
+    nav {
+        grid-area: nav;
+    }
+
+    main {
+        grid-area: main;
+    }
+
+    footer {
+        grid-area: footer;
+    }
+
+    #wrapper {
+        display: grid;
+        grid-template: 
+                "header header"
+                "nav main"
+                "footer footer"
+                / 200px;
+    }
+
+    nav ul {
+        flex-direction: row;
+        display: grid;
+    }
+    
+
+}
+
+@media(min-width: 600px){
+    header{
+        text-align: center;
+        padding-left: 0;
+    }
+
+    h1 {
+        font-size: 3em;
+    }
+
+    nav ul {
+        flex-direction: row;
+        flex-wrap: none;
+        justify-content: space-around;
+    }
+
+    nav li {
+        border-bottom: none;
+    }
+    
+    form {
+        width: 30%;
+        display: grid;
+        grid-gap: 1em;
+        grid-template-columns: 1fr 20em;
+    }
+    secondColumn {
+        grid-column: 9em;
+    }
+
+    #herojobs {
+        background-image: url(assets/img/herojobs.jpg);
+    }
+
+    #homehero {
+        height: 50vh;
+        background-image: url(assets/img/hero.jpg);
+    }
+
+    #heromugs {
+        background-image: url(assets/img/heromugs.jpg);
+    }
+
+    #heroguitar {
+        background-image: url(assets/img/heroguitar.jpg);
+    }
+
+    #flow {
+        flex-direction: row;
+    }
+
+    #mobile {
+        display: none;
+    }
+
+    #destop {
+        display: inline;
+    }
+
+    .details {
+        flex-direction: row;
+    }
+
+    h4 {
+        margin-right: 10%;
+        margin-left: 10%;
+    }
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Job Forms</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width-device-width, initial-scale=1" />
+		<link rel="stylesheet" href="javajam.css">
+		<meta name="description" content = "Sign up to work page">
+	</head>
+	<body>
+		<div id="wrapper">
+		<header>
+			<h1><a href="index.html">Coffee JavaJam Bar</h1></a>
+		</header>
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li> <li><a href="menu.html">Menu</a></li> <li><a href="music.html">Music</a></li> <li><a href="jobs.html">Jobs</a></li>
+			</ul>
+		</nav>
+		<main>
+		  <div id="herojobs"></div>
+        <h2>Jobs at JavaJam</h2>
+		<p>Want to work at JavaJam? Fill out the form below to start your application. All information is required.</p>
+		<form method="post" action="https://webdevbasics.net/scripts/javajam8.php">
+            <label for="myName">Name:</label>
+            <input id="myName" placeholder="Name Please" type="text" required>
+            <label for="myEmail">E-mail:</label>
+            <input id="myEmail" placeholder="Your email please" type="email" required>
+            <label for="myStart">Start Date:</label>
+            <input id="myStart" placeholder="start data" type="date" required>
+            <label for="myExperience">Experience:</label>
+            <textarea if="myExperience" required rows="2" cols="20" type="text"></textarea>
+            <button id="mySubmit">Apply Now</button>
+        </form>
+		</main>
+		<footer>
+			<i>Copyright &copy; 2020 JavaJam Coffee Bar<br>
+                <a href="mailto:nicholas.bander@evsck12.com">Email us</a></i>			
+		</footer>
+		</div>
+	</body>
+</html>
