@@ -6,7 +6,7 @@ My name is Sammy Situ.I first started my Computer Science learning at Harrison H
 After college I plan to find a well paying job  in my field.
 
 ## Life Goal
-Is to make cool software
+write, modify, and test code and scripts that allow computer software to function properly.
 
 ## Hobbies
 + PLaying video Game
